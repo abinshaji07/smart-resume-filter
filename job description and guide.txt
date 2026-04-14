@@ -1,0 +1,22 @@
+Job Title: Python Backend Developer
+
+We are looking for a skilled Python Developer to join our team. The ideal candidate is proficient with backend development and database management.
+
+Responsibilities:
+- Develop and maintain web applications using FastAPI.
+- Work with databases like PostgreSQL and MongoDB.
+- Deploy applications using Docker and AWS.
+- Collaborate with the team using Git and Jira.
+
+Requirements:
+- Strong experience in Python.
+- Knowledge of SQL.
+- Familiarity with cloud services, especially AWS.
+- Experience with Agile methodologies is a plus.
+
+
+
+
+C:\Users\abins\OneDrive\Documents\Projects\cv-score-ai\frontend>npm rum dev
+
+C:\Users\abins\OneDrive\Documents\Projects\cv-score-ai\backend>uvicorn main:app --reload

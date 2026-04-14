@@ -1,0 +1,275 @@
+/* File: frontend/src/index.css */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+input[type="file"], textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #1a1a1a;
+  box-sizing: border-box; /* Important for padding and width */
+  transition: border-color 0.25s;
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.analyze-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.analyze-button:hover {
+  border-color: #646cff;
+}
+.analyze-button:focus,
+.analyze-button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Add to the bottom of frontend/src/index.css */
+
+
+.results-container, .loading, .error {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
+
+
+.error {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+}
+
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+
+.score-text {
+  text-align: center;
+}
+.score-text span {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.score-text p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+
+.skills-breakdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+
+.skill-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+
+.skill-list li {
+  background-color: #333;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.9em;
+}
+
+/* Add to the bottom of your CSS file */
+
+.file-count {
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 0.5rem;
+}
+
+.results-table {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 60px 2fr 1fr 1.5fr;
+  gap: 1rem;
+  padding: 0.8rem;
+  align-items: center;
+  border-bottom: 1px solid #444;
+}
+
+.table-header {
+  font-weight: bold;
+  color: #aaa;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.rank-badge {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background-color: #555;
+}
+
+.rank-1 { background-color: #ffd700; color: #333; }
+.rank-2 { background-color: #c0c0c0; color: #333; }
+.rank-3 { background-color: #cd7f32; color: #fff; }
+
+.score-value {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tag {
+  background-color: #333;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85em;
+}
+
+.error-row {
+  grid-column: 1 / -1;
+  color: #ff6b6b;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1rem;
+}
+
+.error-row span:last-child {
+  grid-column: 2 / -1;
+}
+
+
+
+/* Add to bottom of frontend/src/index.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 60vh;
+}
+
+.role-selection {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.role-button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.8em 1.5em;
+  font-size: 1.2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  text-decoration: none;
+  color: inherit;
+}
+.role-button:hover {
+  border-color: #646cff;
+}
+
+
